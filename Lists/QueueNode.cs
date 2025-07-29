@@ -69,26 +69,21 @@ namespace Lists
 			{
 				front.Previous = null;
 			}
-
 			Count--;
 			return item;
 		}
-
 		public T Peek()
 		{
 			if (IsEmpty())
 			{
 				throw new InvalidOperationException("Очередь пуста");
 			}
-
 			return front.Data;
 		}
-
 		public bool IsEmpty()
 		{
 			return front == null;
 		}
-
 		public void Clear()
 		{
 			front = null;
